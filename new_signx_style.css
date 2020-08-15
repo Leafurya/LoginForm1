@@ -1,0 +1,172 @@
+body{
+	background-color: #3498DB;
+	overflow: hidden;
+}
+.door_l{
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #333;
+}
+.door_r{
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #333;
+}
+
+.door_l .center_form{
+	display: inline-block;
+	position: relative;
+	transform: translate(-50%,-50%);
+	left: 100%;
+	top: 55%;
+
+	height: 300px;
+	z-index: 1;
+}
+.rock_handle{
+	position: absolute;
+
+	left: 50%;
+	top: 15px;
+}
+.rock_handle1{
+	position: absolute;
+	border: 5px solid gray;
+	width: 200px;
+	height: 200px;
+	border-radius: 25%;
+	background-color: #333;
+}
+.rock_handle2{
+	position: absolute;
+	border: 5px solid gray;
+	width: 150px;
+	height: 150px;
+	border-radius: 25%;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.empty{
+	position: absolute;
+	background-color: #333;
+	
+	width: 30px;
+	height: 100px;
+	right: -5px;
+	top: 50%;
+	border-top: 5px solid gray;
+}
+
+.login_form{
+	border: 5px solid gray;
+
+	padding: 10px;
+	background-color: #333;
+	color: #fdfefe;
+	width: 300px;
+	z-index: 1;
+}
+i{
+	font-size: 15px;
+	margin:	10px;
+}
+input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.input_text{
+	margin: 10px;
+}
+.input_text{
+	margin: 10px;
+}
+.input_text input{
+	background: none;
+	border: none;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	height: 25px;
+	width: 80%;
+}
+.input_text input:focus{
+	outline: none;
+}
+.input_btn input{
+	background: none;
+	border: 1px solid gray;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+.input_btn input:focus{
+	outline: none;
+}
+.input_btn input:active{
+	border-color: #fff;
+}
+.title{
+	position: relative;
+	height: 50px;
+}
+
+.empty_t1{
+	background-color: #333;
+	border-top-right-radius: 45%;
+}
+.empty_t2{
+	background-color: #333;
+	border-bottom-right-radius: 45%;
+}
+.change_color{
+	background-color: #3498DB;
+}
+
+.start_unrock_ani{
+	animation-name: unrock;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+}
+@keyframes unrock{
+	100%{
+		top: -15px;
+	}
+}
+
+.start_open_left_door{
+	animation-name: openldoor;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes openldoor{
+	100%{
+		left: -100%;
+	}
+}
+
+.start_open_right_door{
+	animation-name: openrdoor;
+	animation-duration: .8s;
+	animation-fill-mode: forwards;
+}
+@keyframes openrdoor{
+	100%{
+		right: -100%;
+	}
+}
+
+.behind{
+	position: absolute;
+	font-family: consolas;
+}
+.welcome{
+	font-size: 50px;
+	letter-spacing: 3px;
+}

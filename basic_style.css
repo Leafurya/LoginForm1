@@ -1,0 +1,26 @@
+
+* {
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+html, body{
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #85c1e9;
+}
+.center_align{
+	display: inline-block;
+	position: relative;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+}
+.col_align{
+	display: inline-block;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+}
